@@ -1,5 +1,8 @@
 <?php
 
+
+require 'bootstrap-navwalker.php';
+
 /*
  *  add styles
  */
@@ -22,8 +25,13 @@ function mouad_add_scripts()
 		false , '' , true);
 
 	wp_enqueue_script('jquery');
+
 	wp_enqueue_script('bt4',
-		get_template_directory_uri().'/js/bootstrap.min.js',
+		get_template_directory_uri().'/js/bootstrap.js',
+		array(), false, true );
+
+	wp_enqueue_script('popper',
+		get_template_directory_uri().'/js/popper.min.js',
 		array(), false, true );
 
 	wp_enqueue_script('main-js',
@@ -45,4 +53,38 @@ function mouad_add_scripts()
 
 add_action('wp_enqueue_scripts','mouad_add_styles');
 add_action('wp_enqueue_scripts','mouad_add_scripts');
+
+
+/*
+ *  custom menu
+ */
+
+function mouad_register_costum_menu()
+{
+	register_nav_menus(
+		array(
+			'bt4-menu' => 'Navigation Bar',
+			'footer-menu' => 'Footer Menu'
+		)
+	);
+}
+
+function mouad_put_menu()
+{
+	wp_nav_menu(
+		array(
+			'theme_location' => 'bt4-menu',
+			'menu_class' => 'navbar-nav ml-auto',
+			'menu_id'        => 'primary-menu',
+			'container'      => false,
+			'depth'          => 2,
+			'walker'         => new Bootstrap_NavWalker(), // This controls the display of the Bootstrap Navbar
+			'fallback_cb'    => 'Bootstrap_NavWalker::fallback', // For menu fallback
+
+		)
+	);
+}
+
+add_action('init','mouad_register_costum_menu');
+
 
