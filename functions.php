@@ -29,6 +29,16 @@ function mouad_add_scripts()
 	wp_enqueue_script('main-js',
 		get_template_directory_uri().'/js/main.js',
 		array(), false, true );
+
+	/*------   fucking microsoft IE  ----------*/
+
+	wp_enqueue_script('html5shiv',get_template_directory_uri().'/js/html5shiv.min.js');
+	wp_enqueue_script('respond',get_template_directory_uri().'/js/respond.min.js');
+
+	wp_script_add_data('html5shiv' , 'conditional' , 'lt IE 9');
+	wp_script_add_data('respond' , 'conditional' , 'lt IE 9');
+
+	/*------   fucking microsoft IE  ----------*/
 }
 
 // hooks all scripts or put all scripts and styles in index.php
