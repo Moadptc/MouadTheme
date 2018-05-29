@@ -4,3 +4,17 @@
     bottom: 0;
     left: 0;
 }
+
+.dropdown-item.active,
+.dropdown-item:active
+{
+    background: white; !important;
+    color: #333333; !important;
+}
+
+.dropdown-item.active:hover,
+.dropdown-item.active:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
