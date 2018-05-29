@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 
 
-
-
-hello test
+Hello World
 
 
 <?php get_footer() ?>
