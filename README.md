@@ -1,4 +1,4 @@
-#Mouad Theme
+# Mouad Theme
 
 this a simple test theme wordpress
 
