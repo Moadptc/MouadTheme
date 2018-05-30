@@ -1,8 +1,30 @@
-.footer
+
+body
 {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    background: #EEEEEE;
+}
+
+.main-post
+{
+    border: 1px solid #d8d8d8;
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.main-post h3
+{
+    margin: 0 0 10px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    color: #777777;
+
+}
+
+.main-post img
+{
+    display: block;
+    margin: 10px 0 10px;
 }
 
 .dropdown-item.active,
@@ -17,4 +39,11 @@
     color: #16181b;
     text-decoration: none;
     background-color: #f8f9fa;
+}
+
+.footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
