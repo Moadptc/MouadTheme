@@ -92,3 +92,23 @@ function mouad_put_menu()
 add_action('init','mouad_register_costum_menu');
 
 
+
+// article length char and read More Dots
+
+function mouad_extend_excerpt_length($length)
+{
+	return 65;
+}
+
+function mouad_excerpt_change_dots($more)
+{
+	return ' ...';
+}
+
+add_filter('excerpt_length','mouad_extend_excerpt_length');
+add_filter('excerpt_more','mouad_excerpt_change_dots');
+
+
+
+
+
