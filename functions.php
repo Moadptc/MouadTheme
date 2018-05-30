@@ -10,7 +10,7 @@ require 'bootstrap-navwalker.php';
 function mouad_add_styles()
 {
 	wp_enqueue_style('bt4',get_template_directory_uri().'/css/bootstrap.css');
-	wp_enqueue_style('fas',get_template_directory_uri().'/css/fontawesome.css');
+	wp_enqueue_style('fas',get_template_directory_uri().'/css/fontawesome-all.min.css');
 	wp_enqueue_style('main',get_template_directory_uri().'/css/main.css');
 }
 
