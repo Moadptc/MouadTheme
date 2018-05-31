@@ -47,6 +47,66 @@ body
 {
     font-size: 13px;
 }
+/*
+.post-pagination
+{
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+}
+*/
+.post-pagination a,
+.post-pagination span
+{
+    padding: 10px 20px;
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #d4d4d4;
+    -webkit-transition: all 0.4s ease-in-out ;
+    -moz-transition: all 0.4s ease-in-out ;
+    -o-transition: all 0.4s ease-in-out ;
+    transition: all 0.4s ease-in-out ;
+}
+
+.post-pagination a:hover
+{
+    background: #333333;
+    color: white;
+    text-decoration: none;
+}
+
+.post-pagination a:first-child,
+.post-pagination span:first-child
+{
+    float: left !important;
+}
+
+.post-pagination a:last-child,
+.post-pagination span:last-child
+{
+    float: right !important;
+}
+
+.post-pagination span
+{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.post-pagination .fa-chevron-left
+{
+    margin-right: 10px;
+}
+
+.post-pagination .fa-chevron-right
+{
+    margin-left: 10px;
+}
+
+
+
+
 
 /*-------- end post design -----------*/
 

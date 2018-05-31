@@ -89,6 +89,7 @@ function mouad_put_menu()
 	);
 }
 
+
 add_action('init','mouad_register_costum_menu');
 
 

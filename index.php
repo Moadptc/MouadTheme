@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 
+    <div class="moad">
+        <div class="salah">
+            <span class="ooo ppp">
+
+            </span>
+        </div>
+    </div>
 
 <div class="container">
     <div class="row my-5">
@@ -47,14 +54,23 @@
                                 ]);
 	                        ?>
                         </div>
-                        <p class="post-content">
+                        <div class="post-content">
 	                        <?php the_excerpt(); ?>
-                        </p>
+                        </div>
 
                         <hr>
-                        <p class="categories">
+                        <p class="post-categories">
                             <i class="fas fa-tags fa-fw"></i>
                             <?php the_category(', '); ?>
+                        </p>
+                        <p class="post-tags">
+                            <?php
+                                if(has_tag())
+                                {
+	                                the_tags(null , ' | ');
+                                }else
+                                    echo 'Tags : there\'s No tags';
+                             ?>
                         </p>
                     </div>
                 </div>
@@ -62,10 +78,32 @@
 		<?php
 		    }
 	    }
+
+
 	    ?>
 
 
 
+    </div>
+    <div class="row">
+        <div class="col">
+            <?php
+            echo '<div class="post-pagination">';
+
+
+                if(get_previous_posts_link())
+                {
+                previous_posts_link('<i class="fas fa-chevron-left fa-lg"></i> Prev');
+                }else echo '<span class="prev-span">Prev </span>';
+
+                if(get_next_posts_link())
+                {
+                next_posts_link('Next <i class="fas fa-chevron-right fa-lg"></i>');
+                }else echo '<span class="next-span">Next </span>';
+
+                echo '</div>';
+                ?>
+        </div>
     </div>
 </div>
 
