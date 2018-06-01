@@ -89,18 +89,33 @@
 
 				if(get_previous_post_link())
 				{
-					previous_post_link();
+					previous_post_link('%link' ,
+                        '<i class="fas fa-chevron-left"></i> 
+                                &nbsp; Previous Article',
+                        true,'','category');
 				}else echo '<span class="prev-span">Prev </span>';
 
 				if(get_next_post_link())
 				{
-					next_post_link();
+					next_post_link('%link',
+						' Next Article &nbsp; <i class="fas fa-chevron-right"></i>',
+						true,'','category');
 				}else echo '<span class="next-span">Next </span>';
 
 				echo '</div>';
+
 				?>
 			</div>
 		</div>
+
+        <hr class="comment-separator">
+
+        <div class="row">
+            <div class="col">
+                <?php  comments_template();  ?>
+            </div>
+        </div>
+
 	</div>
 
 

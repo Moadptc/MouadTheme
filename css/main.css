@@ -228,6 +228,47 @@ body
 
 
 
+/*-------- Comments list -----------*/
+
+.comments-list ul,
+.comments-list ol
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.comments-list > .comment
+{
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+}
+
+.comments-list > .comment  > .children > .comment
+{
+    padding: 10px;
+    background: #EEEEEE;
+    margin-top: 10px;
+    border: 1px solid #CCCCCC;
+}
+
+.comments-list > .comment  > .children > .comment .comment
+{
+    padding: 10px;
+    background: #dddddd;
+    margin-top: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+
+
+/*-------- end Comments list -----------*/
+
+
+
+
 
 
 .dropdown-item.active,
