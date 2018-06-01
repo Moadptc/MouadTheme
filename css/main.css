@@ -4,7 +4,7 @@ body
     background: #EEEEEE;
 }
 
-/*------ post design ------*/
+/*------ main-post design ------*/
 
 .main-post
 {
@@ -104,10 +104,40 @@ body
     margin-left: 10px;
 }
 
+/*-------- end main-post design -----------*/
+
+
+/*-------- single-post design -----------*/
+
+
+.single-post
+{
+    position: relative;
+}
+
+.single-post .post-edit-link
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: #EEEEEE;
+    border-radius: 0 0 0 10px;
+}
+
+.single-post .post-edit-link i
+{
+    color: #337ab7;
+    margin-left: 5px;
+}
+
+
+/*-------- end single-post design -----------*/
 
 
 
-/*-------- end post design -----------*/
+
+
 
 .dropdown-item.active,
 .dropdown-item:active

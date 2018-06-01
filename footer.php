@@ -5,7 +5,7 @@
 <footer>
 	<div class="row">
 		<div class="col footer bg-dark text-white p-3 text-center">
-			Copyright &copy; <?php echo date('Y') ?> Mouad
+			Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
 		</div>
 	</div>
 </footer>
