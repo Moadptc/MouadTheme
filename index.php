@@ -40,12 +40,14 @@
                         </span>
 
                             <div class="img-post">
-								<?php the_post_thumbnail('',
-									[
-										'class'=>'img-fluid img-responsive',
-										'title'=>'Post img'
-									]);
-								?>
+                                <a href="<?php the_permalink() ?>">
+	                                <?php the_post_thumbnail('',
+		                                [
+			                                'class'=>'img-fluid img-responsive',
+			                                'title'=>'Post img'
+		                                ]);
+	                                ?>
+                                </a>
                             </div>
                             <div class="post-content">
 								<?php the_excerpt(); ?>
