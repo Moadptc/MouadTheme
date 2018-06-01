@@ -6,7 +6,7 @@ body
 
 /*------ main-post design ------*/
 
-.main-post
+.home-page .main-post
 {
     border: 1px solid #d8d8d8;
     background: white;
@@ -14,7 +14,7 @@ body
     margin-bottom: 30px;
 }
 
-.main-post h3
+.home-page .main-post h3
 {
     margin: 0 0 10px;
     letter-spacing: -1px;
@@ -23,27 +23,27 @@ body
 
 }
 
-.main-post .img-post img
+.home-page .main-post .img-post img
 {
     display: block;
     margin: 10px 0 10px;
     height: 300px;
 }
 
-.main-post i
+.home-page .main-post i
 {
     color: #999999;
 }
 
-.main-post .post-content
+.home-page .main-post .post-content
 {
     line-height: 1.7;
     color: #888888;
 }
 
-.main-post .post-author,
-.main-post .post-comments,
-.main-post .post-date
+.home-page .main-post .post-author,
+.home-page .main-post .post-comments,
+.home-page .main-post .post-date
 {
     font-size: 13px;
 }
@@ -55,8 +55,8 @@ body
     text-align: center;
 }
 */
-.post-pagination a,
-.post-pagination span
+.home-page .post-pagination a,
+.home-page .post-pagination span
 {
     padding: 10px 20px;
     display: inline-block;
@@ -69,37 +69,37 @@ body
     transition: all 0.4s ease-in-out ;
 }
 
-.post-pagination a:hover
+.home-page .post-pagination a:hover
 {
     background: #333333;
     color: white;
     text-decoration: none;
 }
 
-.post-pagination a:first-child,
-.post-pagination span:first-child
+.home-page .post-pagination a:first-child,
+.home-page .post-pagination span:first-child
 {
     float: left !important;
 }
 
-.post-pagination a:last-child,
-.post-pagination span:last-child
+.home-page .post-pagination a:last-child,
+.home-page .post-pagination span:last-child
 {
     float: right !important;
 }
 
-.post-pagination span
+.home-page .post-pagination span
 {
     cursor: not-allowed;
     opacity: 0.6;
 }
 
-.post-pagination .fa-chevron-left
+.home-page .post-pagination .fa-chevron-left
 {
     margin-right: 10px;
 }
 
-.post-pagination .fa-chevron-right
+.home-page .post-pagination .fa-chevron-right
 {
     margin-left: 10px;
 }
@@ -107,15 +107,106 @@ body
 /*-------- end main-post design -----------*/
 
 
+
+
+
 /*-------- single-post design -----------*/
 
 
-.single-post
+
+.post-page .main-post
 {
     position: relative;
+    border: 1px solid #d8d8d8;
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
-.single-post .post-edit-link
+.post-page .main-post h3
+{
+    margin: 0 0 10px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    color: #777777;
+
+}
+
+.post-page .main-post .img-post img
+{
+    display: block;
+    margin: 10px 0 10px;
+    height: 400px;
+    width: 100%;
+}
+
+.post-page .main-post i
+{
+    color: #999999;
+}
+
+.post-page .main-post .post-content
+{
+    line-height: 1.8;
+    color: #888888;
+}
+
+.post-page .main-post .post-author,
+.post-page .main-post .post-comments,
+.post-page .main-post .post-date
+{
+    font-size: 13px;
+}
+/*
+.post-pagination
+{
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+}
+*/
+.post-page .post-pagination a,
+.post-page .post-pagination span
+{
+    padding: 10px 20px;
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #d4d4d4;
+    -webkit-transition: all 0.4s ease-in-out ;
+    -moz-transition: all 0.4s ease-in-out ;
+    -o-transition: all 0.4s ease-in-out ;
+    transition: all 0.4s ease-in-out ;
+}
+
+.post-page .post-pagination a:hover
+{
+    background: #333333;
+    color: white;
+    text-decoration: none;
+}
+
+.post-page .post-pagination a:first-child,
+.post-page .post-pagination span:first-child
+{
+    float: left !important;
+}
+
+.post-page .post-pagination a:last-child,
+.post-page .post-pagination span:last-child
+{
+    float: right !important;
+}
+
+.post-page .post-pagination span
+{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+
+
+.post-page .post-edit-link
 {
     position: absolute;
     top: 0;
@@ -125,7 +216,7 @@ body
     border-radius: 0 0 0 10px;
 }
 
-.single-post .post-edit-link i
+.post-page .post-edit-link i
 {
     color: #337ab7;
     margin-left: 5px;

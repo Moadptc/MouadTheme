@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-    <div class="container">
+    <div class="container home-page">
         <div class="row my-5">
 
 

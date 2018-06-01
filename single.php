@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-	<div class="container">
+	<div class="container post-page">
 		<div class="my-5">
 
 
