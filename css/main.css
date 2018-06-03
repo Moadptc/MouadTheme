@@ -228,6 +228,43 @@ body
 
 
 
+/*-------- Author infos -----------*/
+
+.author-infos h4
+{
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #676767;
+    font-size: 26px;
+}
+
+.author-infos h4 .nickname
+{
+    color: #007bff;
+}
+
+.author-infos p
+{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #777;
+}
+
+.author-section
+{
+    border: 1px solid #d2d2d2;
+    border-left:5px solid #007bff;
+}
+
+.author-section .posts-link a
+{
+    color: white;
+    text-decoration: underline;
+}
+
+/*-------- end Author infos -----------*/
+
+
 
 /*-------- Comments list -----------*/
 
@@ -337,6 +374,52 @@ body
 
 
 /*-------- end Comments list -----------*/
+
+
+/*-------- author page -----------*/
+
+.author-page
+{
+
+}
+
+.author-page .author-main-info
+{
+    font-size: 18px;
+    border: 1px solid #dedede;
+    margin-bottom: 20px;
+}
+
+.author-page .author-main-info p
+{
+    color: #777;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+.author-page .profile-header
+{
+
+}
+
+.author-page .author-stats .stats
+{
+    font-size: 14px;
+    border: 1px solid #dedede;
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.author-page .author-stats .stats span
+{
+    display: block;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/*-------- end author page -----------*/
 
 
 

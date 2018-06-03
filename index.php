@@ -21,15 +21,15 @@
                                 </a>
                             </h3>
                             <span class="post-author mr-2">
-                            <i class="fas fa-user fa-fw"></i>
+                                <i class="fas fa-user fa-fw"></i>
 								<?php the_author_posts_link(); ?>
-                        </span>
+                            </span>
                             <span class="post-date mr-2">
-                            <i class="fas fa-calendar fa-fw"></i>
+                                <i class="fas fa-calendar fa-fw"></i>
 								<?php the_time('D m Y'); ?>
-                        </span>
+                            </span>
                             <span class="post-comments mr-2">
-                            <i class="fas fa-comments fa-fw"></i>
+                                <i class="fas fa-comments fa-fw"></i>
 								<?php comments_popup_link(
 									'No Comments',
 									'1 Comment',
@@ -77,9 +77,9 @@
 
 			?>
 
-
-
         </div>
+
+
         <div class="row">
             <div class="col">
 	            <?php

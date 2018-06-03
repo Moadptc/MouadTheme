@@ -78,9 +78,61 @@
 
 			?>
 
-
-
 		</div>
+
+        <div class="container bg-white pt-3 mb-4 author-section">
+            <div class="row">
+                <div class="col-md-2">
+
+		            <?php
+
+		            $id_user = get_the_author_meta('id');
+		            $avatar_args = array(
+			            'class' => 'img-responsive img-thumbnail d-block mx-auto'
+		            );
+
+		            echo get_avatar($id_user , 128,'','User Avatar',$avatar_args);
+
+		            ?>
+
+                </div>
+                <div class="col-md-10 author-infos">
+                    <h4>
+			            <?php  the_author_meta('first_name'); ?>
+			            <?php  the_author_meta('last_name'); ?>
+                        ( <span class="nickname">
+                         <?php  the_author_meta('nickname'); ?>
+                    </span> )
+                    </h4>
+		            <?php if(get_the_author_meta('description')){ ?>
+                        <p>
+				            <?php  the_author_meta('description'); ?>
+                        </p>
+		            <?php } else { ?>
+                        <p> There is no Biography yet </p>
+		            <?php }  ?>
+                </div>
+            </div>
+
+            <p class="author-stats">
+
+                <span class="posts-count float-left badge badge-dark p-2">
+                   User Posts Count : <i class="fas fa-pencil-alt"></i>
+                    <?php echo count_user_posts(get_the_author_meta('id')) ?>
+                </span> 
+
+                <span class="posts-link float-right badge badge-primary p-2">
+                   User Profile Link : <i class="fas fa-link"></i>
+                    <?php echo get_the_author_posts_link() ?>
+                </span>
+                <br>
+
+            </p>
+
+        </div>
+
+        <hr class="comment-separator">
+
 		<div class="row">
 			<div class="col">
 				<?php
