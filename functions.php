@@ -116,6 +116,28 @@ add_filter('excerpt_length','mouad_extend_excerpt_length');
 add_filter('excerpt_more','mouad_excerpt_change_dots');
 
 
+function mouad_pagination()
+{
+	global $wp_query;
+
+	$all_pages = $wp_query->max_num_pages; // get all pages
+
+	$current_page = max(1 , get_query_var('paged')); // get current page
+
+	if($all_pages > 1) // check if total pages > 1
+	{
+		return paginate_links(array(
+			'base' => get_pagenum_link() . '%_%',
+			'format' => 'page/%#%',
+			'current' => $current_page,
+			'mid_size' => 2,
+			'end_size' => 2,
+			'prev_text'          => __('«'),
+			'next_text'          => __('»')
+		));
+	}
+}
+
 
 
 

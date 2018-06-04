@@ -105,6 +105,36 @@ body
     margin-left: 10px;
 }
 
+/* bts4 pagination */
+.home-page .paginate .page-numbers
+{
+    padding: .5rem .75rem;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.home-page .paginate .current
+{
+    color: #ffffff;
+    background-color: #007bff;
+}
+
+.home-page .paginate .current:hover
+{
+    color: #ffffff !important;
+    background-color: #007bff !important;
+}
+
+.home-page .paginate .page-numbers:hover
+{
+    color: #0056b3;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
 /*-------- end main-post design -----------*/
 
 
@@ -485,6 +515,34 @@ body
 }
 
 /*-------- end author page -----------*/
+
+
+/*-------- 404 page -----------*/
+
+.page-not-found
+{
+
+}
+
+.page-not-found img
+{
+    margin-top: 20px;
+    width: 600px;
+    height: 400px;
+}
+
+.page-not-found h1
+{
+    font-size: 5rem;
+    margin-top: 27px;
+}
+
+.page-not-found p
+{
+    font-size: 40px;
+}
+
+/*-------- end 404 page -----------*/
 
 
 

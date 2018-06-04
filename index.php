@@ -81,9 +81,10 @@
 
 
         <div class="row">
-            <div class="col">
+            <div class="col text-center paginate">
 	            <?php
-	            echo '<div class="post-pagination">';
+                /*------------------ next and previous pagination -----------------*/
+	            /*echo '<div class="post-pagination">';
 
 
 	            if(get_previous_posts_link())
@@ -96,7 +97,10 @@
 		            next_posts_link('Next <i class="fas fa-chevron-right fa-lg"></i>');
 	            }else echo '<span class="next-span">Next </span>';
 
-	            echo '</div>';
+	            echo '</div>';*/
+	            /*------------------ end next and previous pagination -----------------*/
+
+	            echo mouad_pagination();
 	            ?>
             </div>
         </div>
