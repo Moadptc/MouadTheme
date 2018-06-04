@@ -97,8 +97,15 @@ add_action('init','mouad_register_costum_menu');
 
 function mouad_extend_excerpt_length($length)
 {
-	return 65;
+	if (is_author()) return 35;
+	else return 85;
 }
+
+/*function mouad_excerpt_length($length)
+{
+	return $length;
+}*/
+
 
 function mouad_excerpt_change_dots($more)
 {
@@ -107,6 +114,7 @@ function mouad_excerpt_change_dots($more)
 
 add_filter('excerpt_length','mouad_extend_excerpt_length');
 add_filter('excerpt_more','mouad_excerpt_change_dots');
+
 
 
 

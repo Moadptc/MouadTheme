@@ -75,10 +75,60 @@
 				}
 			}
 
+            /*
+			// Get Post ID method 1
+            global $post;
+            echo $post->ID;
+
+			// Get Post ID method 2
+            echo get_queried_object_id();
+            */
+
+            //categories ID
+            //print_r(wp_get_post_categories(get_queried_object_id()));
+
+            $random_posts_query_args = array(
+                'posts_per_page' => 5,
+                'orderby' => 'rand',
+                'category__in' => wp_get_post_categories(get_queried_object_id()),
+                'post__not_in' => array(get_queried_object_id())
+            );
+
+            ?>
+
+            <h3 class="random-posts-title pb-3 pt-2 pl-3">Random Posts</h3>
+
+            <div class="row mb-5">
+
+            <?php
+            $random_posts = new WP_Query($random_posts_query_args);
+
+	        if ($random_posts->have_posts() )
+	        {
+		        while ( $random_posts->have_posts() )
+		        {
+			        $random_posts->the_post();
+			        ?>
+
+                    <div class="author-posts col-md-4">
+                        <h3 class="post-title border-de bg-white p-3 my-2">
+                            <a href="<?php the_permalink() ?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </h3>
+                    </div>
+
+
+			        <?php
+		        }
+	        }else echo "<div class='alert alert-primary'>There is no Random posts</div>";
+
+            wp_reset_postdata(); // reset loop
+
 
 			?>
-
 		</div>
+
 
         <div class="container bg-white pt-3 mb-4 author-section">
             <div class="row">

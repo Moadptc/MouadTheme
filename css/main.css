@@ -133,6 +133,14 @@ body
 
 }
 
+.post-page .random-posts-title
+{
+    background: #dddddd;
+    color: #777777;
+    display: block;
+
+}
+
 .post-page .main-post .img-post img
 {
     display: block;
@@ -388,6 +396,19 @@ body
     font-size: 18px;
     border: 1px solid #dedede;
     margin-bottom: 20px;
+    padding: 40px 20px;
+}
+
+.author-page .author-main-info .author-name
+{
+    color: #666666;
+    margin-top: 10px;
+}
+
+.author-page .author-main-info hr
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .author-page .author-main-info p
@@ -395,6 +416,7 @@ body
     color: #777;
     line-height: 1.6;
     letter-spacing: 1px;
+    margin-bottom: 0;
 }
 
 .author-page .profile-header
@@ -417,6 +439,49 @@ body
     display: block;
     font-size: 50px;
     margin-bottom: 10px;
+}
+
+.author-page .author-posts
+{
+    border: 1px solid #dedede;
+    border-left: 5px solid #007bff;
+    box-shadow: 0 0 5px #cbcbcb;
+}
+
+.author-posts img
+{
+    min-width:150px;
+    height: 113px;
+}
+
+.author-posts-title
+{
+    display: block;
+    background: #d8d8d8;
+    padding: 15px 24px;
+    color: #909090;
+    margin-bottom: 18px;
+}
+
+.author-comments-posts-title
+{
+    display: block;
+    background: #d8d8d8;
+    padding: 15px 24px;
+    color: #909090;
+    margin-bottom: 18px;
+}
+
+.leteast-comments
+{
+    border: 1px solid #dedede;
+    border-right: 5px solid #007bff;
+}
+
+.border-de
+{
+    border: 1px solid #dedede;
+    border-left: 3px solid #007bff;
 }
 
 /*-------- end author page -----------*/
