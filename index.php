@@ -2,8 +2,8 @@
 
 
     <div class="container home-page">
-        <div class="row my-5">
 
+        <div class="row my-5">
 
 			<?php
 			if ( have_posts() )

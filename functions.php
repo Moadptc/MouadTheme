@@ -98,6 +98,7 @@ add_action('init','mouad_register_costum_menu');
 function mouad_extend_excerpt_length($length)
 {
 	if (is_author()) return 35;
+	elseif (is_category()) return 50;
 	else return 85;
 }
 

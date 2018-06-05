@@ -261,6 +261,29 @@ body
     margin-left: 5px;
 }
 
+/*  admin styles -*/
+.post-page .bypostauthor
+{
+    position: relative;
+}
+
+/*  admin styles
+.bypostauthor .vcard img
+{
+    width:120px;
+}
+*/
+.post-page .bypostauthor:after
+{
+    position: absolute;
+    content: 'Author';
+    top:10px;
+    right:20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #bababa;
+}
+
 
 /*-------- end single-post design -----------*/
 
@@ -411,6 +434,9 @@ body
 }
 
 
+
+
+
 /*-------- end Comments list -----------*/
 
 
@@ -545,7 +571,32 @@ body
 /*-------- end 404 page -----------*/
 
 
+/*-------- category page -----------*/
 
+.category-information
+{
+    border: 1px solid #dedede;
+}
+
+.category-information h1
+{
+    color: #797979;
+    font-weight: bold;
+}
+
+.category-information .category-decription p
+{
+    color: #4b4b4b;
+    font-size: 17px;
+}
+
+.category-information .cat-satas span
+{
+    color: #727272;
+    font-size: 17px;
+}
+
+/*-------- end category page -----------*/
 
 
 
