@@ -140,6 +140,40 @@ function mouad_pagination()
 }
 
 
+function mouad_main_sidebar()
+{
+	register_sidebar(
+		array(
+
+			'name' => 'Main sidebar',
+			'id' => 'main-sidebar',
+			'description' => 'Main sidebar appear everywhere',
+			'class' => 'main-sidbar',
+			'before_widget' => '<div class = "widget-content">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+
+		)
+	);
+}
+
+add_action('widgets_init' , 'mouad_main_sidebar');
+
+
+// remove WP filter -> add paragraph when press enter in TinyMce
+
+function mouad_remove_paragraph($content)
+{
+	remove_filter('the_content','wpautop');
+
+	return $content;
+}
+
+//add_filter('the_content' , 'mouad_remove_paragraph' , 0);
+
+
+
 
 
 

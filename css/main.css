@@ -140,155 +140,6 @@ body
 
 
 
-
-/*-------- single-post design -----------*/
-
-
-
-.post-page .main-post
-{
-    position: relative;
-    border: 1px solid #d8d8d8;
-    background: white;
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
-.post-page .main-post h3
-{
-    margin: 0 0 10px;
-    letter-spacing: -1px;
-    font-weight: bold;
-    color: #777777;
-
-}
-
-.post-page .random-posts-title
-{
-    background: #dddddd;
-    color: #777777;
-    display: block;
-
-}
-
-.post-page .main-post .img-post img
-{
-    display: block;
-    margin: 10px 0 10px;
-    height: 400px;
-    width: 100%;
-}
-
-.post-page .main-post i
-{
-    color: #999999;
-}
-
-.post-page .main-post .post-content
-{
-    line-height: 1.8;
-    color: #888888;
-}
-
-.post-page .main-post .post-author,
-.post-page .main-post .post-comments,
-.post-page .main-post .post-date
-{
-    font-size: 13px;
-}
-/*
-.post-pagination
-{
-    margin: 20px auto;
-    width: 400px;
-    text-align: center;
-}
-*/
-.post-page .post-pagination a,
-.post-page .post-pagination span
-{
-    padding: 10px 20px;
-    display: inline-block;
-    background: #ffffff;
-    border-radius: 3px;
-    border: 1px solid #d4d4d4;
-    -webkit-transition: all 0.4s ease-in-out ;
-    -moz-transition: all 0.4s ease-in-out ;
-    -o-transition: all 0.4s ease-in-out ;
-    transition: all 0.4s ease-in-out ;
-}
-
-.post-page .post-pagination a:hover
-{
-    background: #333333;
-    color: white;
-    text-decoration: none;
-}
-
-.post-page .post-pagination a:first-child,
-.post-page .post-pagination span:first-child
-{
-    float: left !important;
-}
-
-.post-page .post-pagination a:last-child,
-.post-page .post-pagination span:last-child
-{
-    float: right !important;
-}
-
-.post-page .post-pagination span
-{
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-
-
-.post-page .post-edit-link
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    background: #EEEEEE;
-    border-radius: 0 0 0 10px;
-}
-
-.post-page .post-edit-link i
-{
-    color: #337ab7;
-    margin-left: 5px;
-}
-
-/*  admin styles -*/
-.post-page .bypostauthor
-{
-    position: relative;
-}
-
-/*  admin styles
-.bypostauthor .vcard img
-{
-    width:120px;
-}
-*/
-.post-page .bypostauthor:after
-{
-    position: absolute;
-    content: 'Author';
-    top:10px;
-    right:20px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #bababa;
-}
-
-
-/*-------- end single-post design -----------*/
-
-
-
 /*-------- Author infos -----------*/
 
 .author-infos h4
@@ -599,6 +450,241 @@ body
 /*-------- end category page -----------*/
 
 
+/*-------- category-linux -----------*/
+
+.linux-category .main-post
+{
+    padding-bottom: 10px;
+}
+
+.linux-category .main-post img
+{
+    height: 235px;
+}
+
+.linux-category .main-post .post-title
+{
+    margin: -4px 0 10px !important;
+}
+
+.linux-category .main-post .post-content
+{
+    margin-top: 12px;
+}
+
+.linux-category .main-post hr
+{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/*-------- end category-linux -----------*/
+
+
+
+
+/*-------- single-post design -----------*/
+
+
+
+.post-page .main-post
+{
+    position: relative;
+    border: 1px solid #d8d8d8;
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.post-page .main-post h3
+{
+    margin: 0 0 10px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    color: #777777;
+
+}
+
+.post-page .random-posts-title
+{
+    background: #dddddd;
+    color: #777777;
+    display: block;
+
+}
+
+.post-page .main-post .img-post img
+{
+    display: block;
+    margin: 10px 0 10px;
+    height: 400px;
+    width: 100%;
+}
+
+.post-page .main-post i
+{
+    color: #999999;
+}
+
+.post-page .main-post .post-content
+{
+    line-height: 1.8;
+    color: #888888;
+}
+
+.post-page .main-post .post-author,
+.post-page .main-post .post-comments,
+.post-page .main-post .post-date
+{
+    font-size: 13px;
+}
+/*
+.post-pagination
+{
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+}
+*/
+.post-page .post-pagination a,
+.post-page .post-pagination span
+{
+    padding: 10px 20px;
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #d4d4d4;
+    -webkit-transition: all 0.4s ease-in-out ;
+    -moz-transition: all 0.4s ease-in-out ;
+    -o-transition: all 0.4s ease-in-out ;
+    transition: all 0.4s ease-in-out ;
+}
+
+.post-page .post-pagination a:hover
+{
+    background: #333333;
+    color: white;
+    text-decoration: none;
+}
+
+.post-page .post-pagination a:first-child,
+.post-page .post-pagination span:first-child
+{
+    float: left !important;
+}
+
+.post-page .post-pagination a:last-child,
+.post-page .post-pagination span:last-child
+{
+    float: right !important;
+}
+
+.post-page .post-pagination span
+{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+
+
+.post-page .post-edit-link
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: #EEEEEE;
+    border-radius: 0 0 0 10px;
+}
+
+.post-page .post-edit-link i
+{
+    color: #337ab7;
+    margin-left: 5px;
+}
+
+/*  admin styles -*/
+.post-page .bypostauthor
+{
+    position: relative;
+}
+
+/*  admin styles
+.bypostauthor .vcard img
+{
+    width:120px;
+}
+*/
+.post-page .bypostauthor:after
+{
+    position: absolute;
+    content: 'Author';
+    top:10px;
+    right:20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #bababa;
+}
+
+
+/*-------- end single-post design -----------*/
+
+
+/*-------- sidebar linux -----------*/
+
+.sidebar-linux
+{
+
+}
+
+.sidebar-linux .widget
+{
+    background: #ffffff;
+    border:1px solid #d8d8d8;
+    margin-bottom: 15px;
+}
+
+.sidebar-linux .widget-title
+{
+    margin:0;
+    padding:10px;
+    background: #007bff;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar-linux .widget-content
+{
+    padding: 10px;
+    color: #969696;
+}
+
+.sidebar-linux .widget-content ul
+{
+    list-style: none;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.sidebar-linux .widget-content ul li
+{
+    padding-top: 3px;
+    padding-bottom: 12px;
+}
+
+/*-------- end sidebar linux -----------*/
+
+
+.breadcrumbs-holder
+{
+    background: #ffffff;
+}
+
+.breadcrumbs-holder ol
+{
+    background: #ffffff;
+}
 
 .dropdown-item.active,
 .dropdown-item:active
